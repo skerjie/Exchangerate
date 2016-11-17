@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F012DFB0B0494788332E458F /* Pods_Exchangerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6787F556FD9A6AF7EE4E6FD3 /* Pods_Exchangerate.framework */; };
 		F1E135E71DDC913A00B070F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E135E61DDC913A00B070F3 /* AppDelegate.swift */; };
 		F1E135E91DDC913A00B070F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E135E81DDC913A00B070F3 /* ViewController.swift */; };
 		F1E135EC1DDC913A00B070F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E135EA1DDC913A00B070F3 /* Main.storyboard */; };
 		F1E135EE1DDC913A00B070F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E135ED1DDC913A00B070F3 /* Assets.xcassets */; };
 		F1E135F11DDC913A00B070F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E135EF1DDC913A00B070F3 /* LaunchScreen.storyboard */; };
+		F1E135F91DDC9E8000B070F3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E135F81DDC9E8000B070F3 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6787F556FD9A6AF7EE4E6FD3 /* Pods_Exchangerate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchangerate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4CEAD175F2E0530ECBE8E9 /* Pods-Exchangerate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangerate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exchangerate/Pods-Exchangerate.debug.xcconfig"; sourceTree = "<group>"; };
+		E5FA6E8F296B4FF0ED6A3A9E /* Pods-Exchangerate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchangerate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exchangerate/Pods-Exchangerate.release.xcconfig"; sourceTree = "<group>"; };
 		F1E135E31DDC913A00B070F3 /* Exchangerate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchangerate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E135E61DDC913A00B070F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E135E81DDC913A00B070F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		F1E135ED1DDC913A00B070F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E135F01DDC913A00B070F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1E135F21DDC913A00B070F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E135F81DDC9E8000B070F3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F012DFB0B0494788332E458F /* Pods_Exchangerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		292ACF1DD270DF1367D70F2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6787F556FD9A6AF7EE4E6FD3 /* Pods_Exchangerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88391B9B87C489CDA8C66386 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB4CEAD175F2E0530ECBE8E9 /* Pods-Exchangerate.debug.xcconfig */,
+				E5FA6E8F296B4FF0ED6A3A9E /* Pods-Exchangerate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F1E135DA1DDC913A00B070F3 = {
 			isa = PBXGroup;
 			children = (
 				F1E135E51DDC913A00B070F3 /* Exchangerate */,
 				F1E135E41DDC913A00B070F3 /* Products */,
+				88391B9B87C489CDA8C66386 /* Pods */,
+				292ACF1DD270DF1367D70F2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				F1E135E61DDC913A00B070F3 /* AppDelegate.swift */,
 				F1E135E81DDC913A00B070F3 /* ViewController.swift */,
+				F1E135F81DDC9E8000B070F3 /* TableViewController.swift */,
 				F1E135EA1DDC913A00B070F3 /* Main.storyboard */,
 				F1E135ED1DDC913A00B070F3 /* Assets.xcassets */,
 				F1E135EF1DDC913A00B070F3 /* LaunchScreen.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1E135F51DDC913A00B070F3 /* Build configuration list for PBXNativeTarget "Exchangerate" */;
 			buildPhases = (
+				E3952D03342BF1DB281875D1 /* [CP] Check Pods Manifest.lock */,
 				F1E135DF1DDC913A00B070F3 /* Sources */,
 				F1E135E01DDC913A00B070F3 /* Frameworks */,
 				F1E135E11DDC913A00B070F3 /* Resources */,
+				34F444A5758722721D0646B1 /* [CP] Embed Pods Frameworks */,
+				F6691EC30CA4F7AE2C851D4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +162,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34F444A5758722721D0646B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Exchangerate/Pods-Exchangerate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3952D03342BF1DB281875D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6691EC30CA4F7AE2C851D4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Exchangerate/Pods-Exchangerate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1E135DF1DDC913A00B070F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1E135E91DDC913A00B070F3 /* ViewController.swift in Sources */,
+				F1E135F91DDC9E8000B070F3 /* TableViewController.swift in Sources */,
 				F1E135E71DDC913A00B070F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +311,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -257,6 +338,7 @@
 		};
 		F1E135F61DDC913A00B070F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4CEAD175F2E0530ECBE8E9 /* Pods-Exchangerate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QMNXFRSMX5;
@@ -270,6 +352,7 @@
 		};
 		F1E135F71DDC913A00B070F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FA6E8F296B4FF0ED6A3A9E /* Pods-Exchangerate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QMNXFRSMX5;
@@ -300,6 +383,7 @@
 				F1E135F71DDC913A00B070F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
